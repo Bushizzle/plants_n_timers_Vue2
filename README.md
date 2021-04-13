@@ -1,1 +1,1 @@
-# Just plants watering app
+# Just plants watering timers app
