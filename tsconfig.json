@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "jest"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/apps/ai-search/*"
+      ],
+      "@ais/*": [
+        "./src/apps/ai-search/*"
+      ],
+      "@@/*": [
+        "./src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.vue",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "server"
+  ],
+  "transpileDependencies": [
+    "vuex-module-decorators"
+  ]
+}
